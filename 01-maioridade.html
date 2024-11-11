@@ -1,0 +1,16 @@
+<script>
+    //ENTRADA
+
+    const idade = Number(prompt(`Qual a sua idade?`));
+    
+    //PROCESSAMENTO
+
+    let mensagem = "";
+    let menorIdade = 18 - idade;
+    (idade > 18) ?  mensagem = "Você é maior de idade!" :  mensagem = `Faltam ${menorIdade} para você ser maior de idade :-)`;
+
+    //SAIDA
+
+    alert(mensagem);
+
+</script>

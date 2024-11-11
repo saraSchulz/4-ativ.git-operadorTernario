@@ -1,0 +1,14 @@
+<script>
+    //ENTRADA
+
+    const preco = Number(prompt("informe o preço do produto :"));
+
+    //PROCESSAMENTO
+    let aumento;
+    (preco<= 280)? aumento = preco * 1.2 :(preco <= 700)? aumento = preco * 1.15 :(preco <= 1500)? aumento = preco * 1.1 : aumento = preco * 1.05;
+
+    //SAIDA
+
+    alert(`O custo final do pruduto será de R$${aumento.toFixed(2).replace(".",",")}.`);
+
+</script>

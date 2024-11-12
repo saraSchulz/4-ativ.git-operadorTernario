@@ -1,5 +1,19 @@
 <script>
     //ENTRADA
+
+        const contaAgua = Number(prompt(`Informe sua despesas com a conta de água :`));
+        const contaEnergia = Number(prompt(`Informe sua despesas com a conta de energia elétrica :`));
+        const contaTelefonica = Number(prompt(`Informe sua despesas com a conta de telefone :`));
+        const supermercado = Number(prompt(`Informe sua despesas com o Supermercado : `));
+
+        const Salario = Number(prompt(`Qual é seu salario ?`));
+
     //PROCESSAMENTO
+    let gastos = contaAgua + contaEnergia + contaTelefonica + supermercado;
+    let sobra = Salario - gastos;
+    let msg ;
+    (Salario > gastos)? msg = "você tem dinheiro na conta" : msg = "Você gasta mais do que ganha"
+
     //SAIDA
+    document.write(`${msg} <br> saldo final da conta : R$${sobra.toFixed(2).replace(".",",")}`);
 </script>

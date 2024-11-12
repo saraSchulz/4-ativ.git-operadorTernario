@@ -1,5 +1,16 @@
 <script>
     //ENTRADA
+
+        const precoL = Number(prompt(`Qual o preço do litro do combustivel :`));
+        const qtddL = Number(prompt(`Qual a quantidade de combustivel que você utiliza para se locomover diariamente para seu trabalho ?`));
+
+        const precoTP = Number(prompt(`Informe  o preço do transporte publico :`));
+
     //PROCESSAMENTO
+    let PrecoLDiario = qtddL * precoL;
+    let msg ;
+
+    (PrecoLDiario < precoTP)? msg = "Usar transporte Particular!" : msg = "Usar transporte Público!"
     //SAIDA
+    alert(msg);
 </script>
